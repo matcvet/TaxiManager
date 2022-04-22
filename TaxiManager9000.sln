@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiManager9000", "TaxiManager9000\TaxiManager9000.csproj", "{C0F3E635-227F-42C3-8A6B-1A16458F6A4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiManager9000.Domain", "TaxiManager9000.Domain\TaxiManager9000.Domain.csproj", "{CE850456-690D-4CB9-9C24-82F529D0B7C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiManager9000.DataAccess", "TaxiManager9000.DataAccess\TaxiManager9000.DataAccess.csproj", "{993D2848-FD01-4C1E-AAD1-B69CEE62AC0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiManager9000.Services", "TaxiManager9000.Services\TaxiManager9000.Services.csproj", "{58ADCD93-8245-4A63-9507-A97ED17566AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiManager9000.Helpers", "TaxiManager9000.Helpers\TaxiManager9000.Helpers.csproj", "{18A27311-DF4B-4950-8766-EB1B49F3FBF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0F3E635-227F-42C3-8A6B-1A16458F6A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F3E635-227F-42C3-8A6B-1A16458F6A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F3E635-227F-42C3-8A6B-1A16458F6A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F3E635-227F-42C3-8A6B-1A16458F6A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE850456-690D-4CB9-9C24-82F529D0B7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE850456-690D-4CB9-9C24-82F529D0B7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE850456-690D-4CB9-9C24-82F529D0B7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE850456-690D-4CB9-9C24-82F529D0B7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993D2848-FD01-4C1E-AAD1-B69CEE62AC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993D2848-FD01-4C1E-AAD1-B69CEE62AC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993D2848-FD01-4C1E-AAD1-B69CEE62AC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993D2848-FD01-4C1E-AAD1-B69CEE62AC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58ADCD93-8245-4A63-9507-A97ED17566AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58ADCD93-8245-4A63-9507-A97ED17566AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58ADCD93-8245-4A63-9507-A97ED17566AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58ADCD93-8245-4A63-9507-A97ED17566AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A27311-DF4B-4950-8766-EB1B49F3FBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A27311-DF4B-4950-8766-EB1B49F3FBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A27311-DF4B-4950-8766-EB1B49F3FBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A27311-DF4B-4950-8766-EB1B49F3FBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DC25B26-58E4-49BD-806E-E80B905A7E73}
+	EndGlobalSection
+EndGlobal
