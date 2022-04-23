@@ -50,6 +50,7 @@ namespace TaxiManager9000.DataAccess
             try
             {
                 Db.Remove(Db.Single(x => x.Id == id));
+                Id--;
                 return true;
             }
             catch(Exception ex)
