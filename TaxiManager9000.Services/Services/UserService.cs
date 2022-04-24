@@ -3,7 +3,7 @@ using TaxiManager9000.Domain.Enums;
 using TaxiManager9000.Services.Helpers;
 using TaxiManager9000.Services.Interfaces;
 
-namespace TaxiManager9000.Services
+namespace TaxiManager9000.Services.Services
 {
     public class UserService : BaseService<User>, IUserService
     {
@@ -140,7 +140,7 @@ namespace TaxiManager9000.Services
             foreach (User u in users)
             {
                 Console.WriteLine(u.Print());
-            }
+            }           
 
             while (true)
             {
@@ -153,15 +153,19 @@ namespace TaxiManager9000.Services
                     StringFormatter.Colorize("Enter a valid id", ConsoleColor.Red);
                     continue;
                 }
-
+             
                 if (user.Id == id)
                 {
                     StringFormatter.Colorize("You can't remove yourself", ConsoleColor.Red);
                     continue;
                 }
 
-                Db.RemoveById(id);
-                return;
+                bool userRemoved = Db.RemoveById(id);
+
+                if (userRemoved)
+                {
+                    return;
+                }
             }
         }
     }

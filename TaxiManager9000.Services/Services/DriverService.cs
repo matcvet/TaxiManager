@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TaxiManager9000.Services
+﻿namespace TaxiManager9000.Services.Services
 {
     public class DriverService
     {

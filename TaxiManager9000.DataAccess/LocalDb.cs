@@ -42,7 +42,16 @@ namespace TaxiManager9000.DataAccess
 
         public T GetById(int id)
         {
-            return Db.Single(x => x.Id == id);
+            try
+            {
+                T entity = Db.Single(x => x.Id == id);
+                return entity;
+            }
+            catch(Exception ex)
+            {
+                StringFormatter.Colorize(ex.Message, ConsoleColor.Red);
+                return null;
+            }
         }
 
         public bool RemoveById(int id)
@@ -53,9 +62,9 @@ namespace TaxiManager9000.DataAccess
                 Id--;
                 return true;
             }
-            catch(Exception ex)
+            catch(Exception e)
             {
-                StringFormatter.Colorize(ex.Message, ConsoleColor.Red);
+                StringFormatter.Colorize(e.Message + ", user doesnt exist", ConsoleColor.Red);
                 return false;
             }
         }

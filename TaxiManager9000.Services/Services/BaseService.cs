@@ -2,7 +2,7 @@
 using TaxiManager9000.Domain.Entities;
 using TaxiManager9000.Services.Interfaces;
 
-namespace TaxiManager9000.Services
+namespace TaxiManager9000.Services.Services
 {
     public class BaseService<T> : IBaseService<T> where T : BaseEntity
     {
