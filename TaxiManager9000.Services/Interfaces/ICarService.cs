@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TaxiManager9000.Services.Interfaces
+﻿namespace TaxiManager9000.Services.Interfaces
 {
-    internal interface ICarService
+    public interface ICarService
     {
+        void ListVehicles();
+        void LicencePlateStatus();
     }
 }

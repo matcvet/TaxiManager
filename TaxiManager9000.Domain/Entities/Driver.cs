@@ -9,30 +9,35 @@ namespace TaxiManager9000.Domain.Entities
         public Shift Shift { get; set; }
         public string Licence { get; set; }
         public DateTime ExpiaryDateLicence { get; set; }
-        public Car AssignedCar { get; set; }
+        public Car? AsignedCar { get; set; }
 
-        public Driver(string firstName, string lastName, Shift shift, string licence, DateTime expiaryDateLicence)
+        public Driver(string firstName, string lastName, string licence, DateTime expiaryDateLicence)
         {
             FirstName = firstName;
             LastName = lastName;
-            Shift = shift;
             Licence = licence;
             ExpiaryDateLicence = expiaryDateLicence;
+            AsignedCar = null;
         }
 
         public override string Print()
         {
-            return $"Id: {Id}\nName: {FirstName} {LastName}\nShift: {Shift}\nLicence: {Licence} - {ExpiaryDateLicence}";
+            return $"Id: {Id} " +
+                $"Name: {FirstName} {LastName} " +
+                $"Shift: {Shift} " +
+                $"Taxi Licence: {Licence} " +
+                $"Expires: {ExpiaryDateLicence.ToString("dd, MM, yyyy")} " +
+                $"Car: {(CheckCarStatus() ? AsignedCar.Model : "no car") }";
         }
 
         public bool CheckCarStatus()
         {
-            if (AssignedCar != null)
+            if (AsignedCar == null)
             {
-                return true;
+                return false;
             }
 
-            return false;
+            return true;
         }
     }
 }

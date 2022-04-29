@@ -4,6 +4,6 @@
     {
         Administrator = 1,
         Manager,
-        Maintanance
+        Maintenance
     }
 }

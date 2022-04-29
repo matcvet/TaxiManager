@@ -115,7 +115,7 @@ namespace TaxiManager9000.Services.Services
                         role = Roles.Administrator;
                         break;
                     case "2":
-                        role = Roles.Maintanance;
+                        role = Roles.Maintenance;
                         break;
                     case "3":
                         role = Roles.Manager;
@@ -125,8 +125,12 @@ namespace TaxiManager9000.Services.Services
                         continue;
                 }
 
-                Db.Add(new User(usernameInput, passwordInput, role));
-                return;
+                bool userAdded = Db.Add(new User(usernameInput, passwordInput, role));
+
+                if(userAdded)
+                {
+                    return;
+                }
             }
         }
 

@@ -1,6 +1,5 @@
 ﻿using TaxiManager9000.DataAccess.Interfaces;
 using TaxiManager9000.Domain.Entities;
-using TaxiManager9000.Domain.Enums;
 using TaxiManager9000.Services.Helpers;
 
 namespace TaxiManager9000.DataAccess

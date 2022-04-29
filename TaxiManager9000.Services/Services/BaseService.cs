@@ -25,6 +25,7 @@ namespace TaxiManager9000.Services.Services
                 return false;
             }
         }
+
         public T GetById(int id)
         {
             return Db.GetById(id);
@@ -40,7 +41,6 @@ namespace TaxiManager9000.Services.Services
             if (Db.RemoveById(id))
             {
                 return true;
-
             }
 
             return false;

@@ -8,5 +8,7 @@ namespace TaxiManager9000.Services.Interfaces
 {
     internal interface IDriverService
     {
+        void LicencePlateStatus();
+        void ListDrivers();
     }
 }
